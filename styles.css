@@ -18,16 +18,17 @@ body {
     background: #f2f2f2;
 }
 
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-}
-
+/* HEADER */
 header {
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(to bottom, var(--azul-oscuro) 0%, var(--azul-medio) 45%, var(--azul-claro) 100%);
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
 }
 
 .menu {
@@ -40,7 +41,6 @@ header {
     color: var(--blanco);
     text-decoration: none;
     font-size: 16px;
-    font-weight: 300;
     margin: 0 22px;
     padding-bottom: 8px;
     border-bottom: 2px solid transparent;
@@ -52,6 +52,7 @@ header {
     border-bottom: 2px solid var(--blanco);
 }
 
+/* TEXTO HEADER */
 .container-text {
     height: 78vh;
     display: flex;
@@ -71,15 +72,13 @@ header {
 .nombre {
     color: var(--blanco);
     font-size: 48px;
-    font-weight: 300;
-    margin: 0 0 8px 0;
+    margin-bottom: 8px;
 }
 
 .profesion {
     color: var(--blanco);
     font-size: 22px;
-    font-weight: 300;
-    margin: 0 0 28px 0;
+    margin-bottom: 28px;
 }
 
 .boton {
@@ -97,26 +96,40 @@ header {
     transform: scale(1.05);
 }
 
-.boton i {
-    margin-left: 6px;
+/* ACERCA DE */
+.acerca-de {
+    background: #ffffff;
+    padding: 100px 20px;
+    text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-    .menu a {
-        margin: 8px 10px;
-        font-size: 14px;
-    }
+.contenedor-acerca {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
 
-    .nombre {
-        font-size: 34px;
-    }
+.foto {
+    margin-top: -80px;
+    margin-bottom: 30px;
+}
 
-    .profesion {
-        font-size: 18px;
-    }
+.foto img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 6px solid #ffffff;
+    object-fit: cover;
+}
 
-    .text {
-        max-width: 90%;
-        padding: 35px 20px;
-    }
+.texto-acerca h2 {
+    font-size: 36px;
+    color: #c9a24b;
+    margin-bottom: 20px;
+}
+
+.texto-acerca p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
 }
